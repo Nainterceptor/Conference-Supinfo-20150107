@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 
 	<head>
 		<meta charset="utf-8">
@@ -16,6 +16,23 @@
 
 		<link rel="stylesheet" href="revealjs/css/reveal.min.css">
 		<link rel="stylesheet" href="revealjs/css/theme/night.css" id="theme">
+		<style type="text/css">
+			.reveal section img.no-border {
+				border: 0;
+				box-shadow: none;
+				margin: 0;
+				background: none;
+			}
+
+			#gael-icons {
+				position: absolute;
+				bottom: -183px;
+				right: 0;
+				width: 200px;
+				height: 183px;
+				text-align: left;
+			}
+		</style>
 
 		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
 		<script>
@@ -40,31 +57,98 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-					<h1>Présentation des métiers de l'IT</h1>
-					<p>
-						<small>Conférence du 7 janvier 2015 @ Supinfo Paris</small>
-					</p>
+					<section>
+						<h1>Présentation des métiers de l'IT</h1>
+						<p>
+							<small>Conférence du 7 janvier 2015 @ Supinfo Paris</small>
+						</p>
+					</section>
+					<section>
+						<h1>Vos intervenants</h1>
+						<ul>
+							<li>Lucas CORBEAUX</li>
+							<li>Carrel YAKPOVI</li>
+							<li>Gaël DEMETTE</li>
+						</ul>
+					</section>
 				</section>
 				<section>
 					<section>
-						<h1>L'informatique, un secteur<br />porteur</h1>
+						<h1>Revue du secteur en 2014</h1>
+						<p>Le numérique, vecteur de croissance en France</p>
+					</section>
+					<section>
+						<blockquote cite="Jean-Christophe Sciberras, président de l’ANDRH">&ldquo;Le numérique est [...] un secteur d'avenir. [...] Nous avons déjà des pénuries. Il faut [...] que la formation suive.&rdquo;</blockquote>
+						<p><small>Jean-Christophe Sciberras, président de l’ANDRH</small></p>
+					</section>
+					<section>
+						<h2>L'informatique, un secteur porteur</h2>
 						<ul>
 							<li>Fort taux d'emploi après un bac +5</li>
-							<li></li>
+							<li>Un salaire honorable</li>
 						</ul>
 					</section>
 					<section>
-						<h1>L'informatique, un secteur<br />qui recrute</h1>
+						<h2>L'informatique, un secteur qui recrute</h2>
 						<ul>
 							<li>85% d'emploi en 2014 sur la promotion 2013 (Apec)</li>
 							<li>90% d'insertion en 2014 (Apec)</li>
+							<li>90 000 postes prévus entre 2012 et 2022 (CIDJ)</li>
 						</ul>
 					</section>
 					<section>
 						<ul>
 							<li>Ingénieurs et cadres d'étude, recherche et développement en informatique (388a)</li>
-							<li>47 000 € bruts / an</li>
+							<li>47 000 € bruts / an (INSEE)</li>
+							<li>94% de CDI (INSEE)</li>
 						</ul>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h1>Le développement</h1>
+						<p>Par Gaël DEMETTE</p>
+					</section>
+					<section>
+						<h2>L'auteur</h2>
+						<ul>
+							<li>Etudiant formateur à Supinfo Paris</li>
+							<li>Contributeur opensource</li>
+							<li>"Tech enthusiast"</li>
+						</ul>
+						<div id="gael-icons">
+							<a title="Vers github" href="https://github.com/Nainterceptor/">
+								<img src="icons/github.png" alt="github"
+									 class="no-border"/>
+								<small>Nainterceptor</small>
+							</a><br />
+							<a title="Vers LinkedIn" href="http://fr.linkedin.com/pub/ga%C3%ABl-demette/65/2b9/91/">
+								<img src="icons/linkedin.png" alt="LinkedIn"
+									 class="no-border"/>
+								<small>Gaël Demette</small>
+							</a><br />
+							<a title="Vers Twitter" href="https://twitter.com/nainterceptor">
+								<img src="icons/twitter.png" alt="Twitter"
+									 class="no-border"/>
+								<small>@Nainterceptor</small>
+							</a>
+						</div>
+					</section>
+					<section>
+						<h1>L'architecte</h1>
+					</section>
+					<section></section>
+					<section>
+						<h1>Le développeur</h1>
+					</section>
+					<section>
+						<h1>Le DBA</h1>
+					</section>
+					<section>
+						<h1>L'intégrateur</h1>
+					</section>
+					<section>
+						<h1>Le développeur "Full-Stack"</h1>
 					</section>
 				</section>
 				<section>
@@ -81,7 +165,9 @@
 
 			// Full list of configuration options available here:
 			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize();
+			Reveal.initialize({
+				history: true
+			});
 
 		</script>
 
