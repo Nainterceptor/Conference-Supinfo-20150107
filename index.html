@@ -24,13 +24,25 @@
 				background: none;
 			}
 
-			#gael-icons {
+			#gael-icons, #lucas-icons {
 				position: absolute;
 				bottom: -183px;
 				right: 0;
 				width: 200px;
 				height: 183px;
 				text-align: left;
+			}
+
+			.oops {
+				text-decoration: line-through;
+			}
+
+			li.show-and-hide {
+				display: none;
+			}
+
+			li.show-and-hide.current-fragment {
+				display: list-item;
 			}
 		</style>
 
@@ -412,6 +424,28 @@
 							<li>Manager autodidacte</li>
 							<li>Entrepreneur autodidacte</li>
 						</ul>
+						<div id="lucas-icons">
+							<a title="Vers github" href="https://github.com/lucascorbeaux/">
+								<img src="img/icons/github.png" alt="github"
+									 class="no-border"/>
+								<small>lucascorbeaux</small>
+							</a><br />
+							<a title="Vers LinkedIn" href="https://www.linkedin.com/pub/lucas-corbeaux/76/390/379">
+								<img src="img/icons/linkedin.png" alt="LinkedIn"
+									 class="no-border"/>
+								<small>Lucas CORBEAUX</small>
+							</a><br />
+							<a title="Vers Twitter" href="https://twitter.com/lucascorbeaux">
+								<img src="img/icons/twitter.png" alt="Twitter"
+									 class="no-border"/>
+								<small>@lucascorbeaux</small>
+							</a><br/>
+							<a title="BeMyCTO" href="http://bemycto.com/">
+								<img src="img/icons/bemycto.png" alt="Twitter"
+									 class="no-border"/>
+								<small>BeMyCTO</small>
+							</a>
+						</div>
 					</section>
 					<section>
 						<h2>Petit refactoring</h2>
@@ -428,15 +462,42 @@ skills.forEach(autodidactize);
 					</section>
 					<section>
 						<h2>Obtenir de ses collaborateurs</h2>
+						<ul>
+							<li class="fragment">Des résultats</li>
+							<li class="fragment">De l'engagement</li>
+							<li class="fragment show-and-hide">Un numéro de carte bleue</li>
+							<li class="fragment oops">Un numéro de carte bleue</li>
+						</ul>
 					</section>
 					<section>
 						<h2>Management top-down</h2>
+						<img src="img/topdownIllustration.png">
+						<ul>
+							<li class="fragment">Le management décide des objectifs et des moyens</li>
+							<li class="fragment">L'équipe produit, et c'est tout</li>
+							<li class="fragment">Forte prévisibilité, faible innovation, pas d'engagement des équipes</li>
+						</ul>
 					</section>
 					<section>
 						<h2>Management bottom-up</h2>
+						<img src="img/bottomupIllustration.png">
+						<ul>
+							<li class="fragment">Le management décide des objectifs</li>
+							<li class="fragment">L'équipe réfléchit aux meilleurs moyens possibles</li>
+							<li class="fragment">Le management alimente la réflexion et tranche la décision</li>
+							<li class="fragment">L'équipe produit</li>
+							<li class="fragment">Équipes innovantes, productives, engagées mais moins de visibilité</li>
+						</ul>
 					</section>
 					<section>
-						<h2>Prédiction vs Innovation</h2>
+						<h2>Devenir manager</h2>
+						<ul>
+							<li class="fragment">Savoir être un facilitateur</li>
+							<li class="fragment">Comprendre ce que les autres font</li>
+							<li class="fragment">Savoir que si ils font différemment ce n'est pas forcément moins bien</li>
+							<li class="fragment">Apprendre à lâcher prise</li>
+							<li class="fragment">Oublier le plan de carrière : tirer partie des opportunités</li>
+						</ul>
 					</section>
 					<section>
 						<h1>Le rôle de CTO</h1>
@@ -448,51 +509,83 @@ skills.forEach(autodidactize);
 						<h3>Une startup qu'est-ce que c'est ?</h3>
 					</section>
 					<section>
-						<p><em>A startup is a temporary organization designed to search for a repeatable and scalable business model</em></p>
-						<small>Steve Blank</small>
+						<blockquote lang="fr">
+							<p>
+								A startup is a temporary organization designed to search for a repeatable and scalable business model
+							</p>
+							<small>Steve Blank</small>
+						</blockquote>
 					</section>
 					<section>
+						<p>En gros et en résumé :</p>
 						<ul>
-							<li>Une structure temporaire</li>
-							<li>Qui fluctue énormément</li>
-							<li>Foncer dans le mur en espérant le convaincre de bouger avant l'impact</li>
+							<li class="fragment">Une structure temporaire</li>
+							<li class="fragment">Qui fluctue énormément</li>
+							<li class="fragment">Foncer dans le mur en espérant le convaincre de bouger avant l'impact</li>
 						</ul>
 					</section>
 					<section>
 						<h3>Le CTO des premiers mois<br><small>Le starter</small></h3>
 					</section>
 					<section>
-						<p>TODO : Contexte</p>
+						<p>Vous avez une idée géniale, pas de bol vous êtes le seul à le savoir.</p>
+						<p class="fragment">Il va falloir la concrétiser <span class="fragment highlight-red">très vite</span>.</p>
 					</section>
 					<section>
-						<p>TODO : Missions</p>
+						<p>Il va falloir :</p>
+						<ul>
+							<li class="fragment">Choisir des technos sans trop savoir ce que l'on va produire au final</li>
+							<li class="fragment">Prototyper <span class="fragment highlight-red">très vite</span></li>
+							<li class="fragment">Itérer <span class="fragment highlight-red">encore plus vite</span> sur le prototype de base</li>
+						</ul>
 					</section>
 					<section>
-						<p>TODO : Scénarios</p>
+						<p>Votre associé à une idée géniale : un SaaS de stockage de fichiers.</p>
+						<p class="fragment">Vous êtes super fier de votre système d'upload : vous y avez passé la semaine.</p>
+						<p class="fragment">Et 3h passées sur un graph d'occupation d'espace disque pour le fun.</p>
+						<p class="fragment">Deux semaines plus tard les retours clients sont unanimes : personne ne veut de votre solution de stockage.</p>
+						<p class="fragment">Par contre on souhaite vous acheter votre produit pour mesurer l'occupation d'espace disque.</p>
+						<p class="fragment">Et les clients veulent voir un prototype <span class="fragment highlight-red">demain</span>.</p>
 					</section>
 					<section>
 						<h3>Le CTO de la croissance<br><small>Le builder</small></h3>
 					</section>
 					<section>
-						<p>TODO : Contexte</p>
+						<p>Vous avez survécu aux deadlines des premiers mois, validé vos premières idées et levé des fonds.</p>
+						<p class="fragment">Maintenant il faut que le produit évolue <span class="fragment highlight-red">vite</span>, tout en accueillant <span class="fragment highlight-red">plus de monde</span>.</p>
 					</section>
 					<section>
-						<p>TODO : Missions</p>
+						<p>C'est l'heure de rendre tout ça scalable :</p>
+						<ul>
+							<li class="fragment">Recruter une équipe</li>
+							<li class="fragment">Poser les bases du workflow</li>
+							<li class="fragment">Adapter les technologies aux besoins de performances</li>
+						</ul>
 					</section>
 					<section>
-						<p>TODO : Scénarios</p>
+						<p>Vous voyez ce jour en entretien un lead dev.</p>
+						<p class="fragment">Ça tombe bien, la qualité commençait à chuter.</p>
+						<p class="fragment">Et vous êtes trop occupé à trouver une solution pour que le serveur encaisse 3 fois plus de requêtes par seconde d'ici deux semaines...</p>
 					</section>
 					<section>
 						<h3>Le CTO de la startup successful<br><small>L'executive</small></h3>
 					</section>
 					<section>
-						<p>TODO : Contexte</p>
+						<p>Votre startup compte désormais 200 salariés et votre solution de monitoring est utilisée par plus de 10000 clients.</p>
+						<p class="fragment">C'est bien, mais le marché se réduit de jour en jour, il va falloir augmenter les marges de l'entreprise car on ne trouvera bientôt plus d'autres clients.</p>
 					</section>
 					<section>
-						<p>TODO : Missions</p>
+						<p>C'est l'heure de l'optimisation :</p>
+						<ul>
+							<li class="fragment">Réduire les coûts là où c'est possible...</li>
+							<li class="fragment">...en externalisant ce qui coûte trop cher en interne...</li>
+							<li class="fragment">...mais surtout en internalisant ce que l'entreprise sait faire.</li>
+						</ul>
 					</section>
 					<section>
-						<p>TODO : Scénarios</p>
+						<p>Vos objectifs cette année sont d'économiser 200000$ sur les coûts de fonctionnement sans compromettre la qualité de service.</p>
+						<p class="fragment">Notre compétence en gestion d'espace disque nous permettrait d'économiser 80000$ par an en l'internalisant, il faut lancer un recrutement pour constituer une nouvelle équipe.</p>
+						<p class="fragment">D'ailleurs nos lead dev sont devenus très bons, tellement que leur équipes n'ont plus autant besoin d'eux pour avancer. Vendre leur compétence d'expert nous rapporterait 120000$ par an supplémentaire, sans impacter nos projets.</p>
 					</section>
 					<section>
 						<h2>Le CTO dans une entreprise</h2>
@@ -511,12 +604,14 @@ skills.forEach(autodidactize);
 					</section>
 					<section>
 						<h2>Créer sa boîte</h2>
+						<img src="img/commitStrip/cto.jpg">
 					</section>
 					<section>
-						<h2>Rejoindre une entreprise en croissance</h2>
+						<h2>Rejoindre une entreprise (ou un nouveau service) en croissance</h2>
 					</section>
 					<section>
 						<h2>Devenir CTO à la place du CTO</h2>
+						<img src="img/iznogoudIllustration.jpg">
 					</section>
 					<section>
 						<h2>Merci !</h2>
