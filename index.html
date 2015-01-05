@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 
 	<head>
 		<meta charset="utf-8">
@@ -16,6 +16,23 @@
 
 		<link rel="stylesheet" href="revealjs/css/reveal.min.css">
 		<link rel="stylesheet" href="revealjs/css/theme/night.css" id="theme">
+		<style type="text/css">
+			.reveal section img.no-border {
+				border: 0;
+				box-shadow: none;
+				margin: 0;
+				background: none;
+			}
+
+			#gael-icons {
+				position: absolute;
+				bottom: -183px;
+				right: 0;
+				width: 200px;
+				height: 183px;
+				text-align: left;
+			}
+		</style>
 
 		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
 		<script>
@@ -40,48 +57,364 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-					<h1>Présentation des métiers de l'IT</h1>
-					<p>
-						<small>Conférence du 7 janvier 2015 @ Supinfo Paris</small>
-					</p>
+					<section>
+						<h1>Présentation des métiers de l'IT</h1>
+						<p>
+							<small>Conférence du 7 janvier 2015 @ Supinfo Paris</small>
+						</p>
+					</section>
+					<section>
+						<h1>Vos intervenants</h1>
+						<ul>
+							<li>Lucas CORBEAUX</li>
+							<li>Carrel YAKPOVI</li>
+							<li>Gaël DEMETTE</li>
+						</ul>
+					</section>
 				</section>
 				<section>
 					<section>
-						<h1>L'informatique, un secteur<br />porteur</h1>
+						<h1>Revue du secteur en 2014</h1>
+						<p>Le numérique, vecteur de croissance en France</p>
+					</section>
+					<section>
+						<blockquote cite="Jean-Christophe Sciberras, président de l’ANDRH">&ldquo;Le numérique est [...]
+							un secteur d'avenir. [...] Nous avons déjà des pénuries.
+							Il faut [...] que la formation suive.&rdquo;</blockquote>
+						<p><small>Jean-Christophe Sciberras, président de l’ANDRH</small></p>
+					</section>
+					<section>
+						<h2>L'informatique, un secteur porteur</h2>
 						<ul>
 							<li>Fort taux d'emploi après un bac +5</li>
-							<li></li>
+							<li>Un salaire honorable</li>
 						</ul>
 					</section>
 					<section>
-						<h1>L'informatique, un secteur<br />qui recrute</h1>
+						<h2>L'informatique, un secteur qui recrute</h2>
 						<ul>
 							<li>85% d'emploi en 2014 sur la promotion 2013 (Apec)</li>
 							<li>90% d'insertion en 2014 (Apec)</li>
+							<li>90 000 postes prévus entre 2012 et 2022 (CIDJ)</li>
 						</ul>
 					</section>
 					<section>
 						<ul>
 							<li>Ingénieurs et cadres d'étude, recherche et développement en informatique (388a)</li>
-							<li>47 000 € bruts / an</li>
+							<li>47 000 € bruts / an (INSEE)</li>
+							<li>94% de CDI (INSEE)</li>
 						</ul>
 					</section>
 				</section>
 				<section>
 					<section>
-						<h1>Le management d'équipe technique</h1>
-						<p>Par Lucas CORBEAUX</p>
+						<h1>Compétences transverses</h1>
+					</section>
+					<section>
+						<h2>Veille technologique</h2>
+						<p>On parle de technologie de l'<strong class="fragment highlight-green">information</strong>.</p>
+						<ul>
+							<li class="fragment">Mailing-lists</li>
+							<li class="fragment">Flux RSS</li>
+							<li class="fragment">Twitter</li>
+							<li class="fragment">Presse spécialisée & blogs</li>
+						</ul>
+						<p class="fragment">Si vous apprenez une actualité à la télévision, il est trop tard.</p>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h1>Le développement</h1>
+						<p>Par Gaël DEMETTE</p>
 					</section>
 					<section>
 						<h2>L'auteur</h2>
 						<ul>
-							<li>Développeur autodidacte</li>
-							<li>Manager autodidacte</li>
-							<li>Entrepreneur autodidacte</li>
+							<li>Etudiant formateur à Supinfo Paris</li>
+							<li>Contributeur opensource</li>
+							<li>"Tech enthusiast"</li>
+						</ul>
+						<div id="gael-icons">
+							<a title="Vers github" href="https://github.com/Nainterceptor/">
+								<img src="img/icons/github.png" alt="github"
+									 class="no-border"/>
+								<small>Nainterceptor</small>
+							</a><br />
+							<a title="Vers LinkedIn" href="http://fr.linkedin.com/pub/ga%C3%ABl-demette/65/2b9/91/">
+								<img src="img/icons/linkedin.png" alt="LinkedIn"
+									 class="no-border"/>
+								<small>Gaël Demette</small>
+							</a><br />
+							<a title="Vers Twitter" href="https://twitter.com/nainterceptor">
+								<img src="img/icons/twitter.png" alt="Twitter"
+									 class="no-border"/>
+								<small>@Nainterceptor</small>
+							</a>
+						</div>
+					</section>
+					<section>
+						<h1>L'architecte logiciel</h1>
+						<img src="img/graphs/degradation_logicielle.png" alt="Dégradation logicielle" height="500" />
+					</section>
+					<section>
+						<h2>Contexte</h2>
+						<p>L'architecte est une personne ayant une vision globale du projet, chargée de faire respecter
+							l'architecture logicielle définie, et d'anticiper les problématiques.</p>
+					</section>
+					<section>
+						<h3>Une analyse</h3>
+						<p>L'architecture logicielle est une analyse de <strong>comment</strong> répondre au besoin.</p>
+					</section>
+					<section>
+						<h3>Des objectifs</h3>
+						<ul>
+							<li class="fragment">Interopérabilité</li>
+							<li class="fragment">Maintenabilité</li>
+							<li class="fragment">Fiabilité</li>
+							<li class="fragment">Réutilisabilité</li>
+							<li>...</li>
 						</ul>
 					</section>
 					<section>
-						<h2>Petit refactoring</h2>
+						<h2>Missions</h2>
+						<p>L'architecte logiciel doit :</p>
+						<ul>
+							<li class="fragment">Anticiper</li>
+							<li class="fragment">Améliorer</li>
+							<li class="fragment">Valider</li>
+							<li class="fragment">Eviter de s'isoler
+								(syndrome de la <span class="fragment highlight-red">tour d'ivoire</span>)</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Scénario</h2>
+						<p>Une équipe doit réaliser une solution de gestion de stocks pour remplacer
+							une solution existante et peu fiable.</p>
+						<p>Cette gestion des stocks doit pouvoir être manipulée depuis des terminaux mobiles
+							dans les entrepots de la société.</p>
+					</section>
+					<section>
+						<h3>Une vision globale</h3>
+						<p>L'architecte logiciel connait l'existant, et les besoins.</p>
+						<p>L'architecte logiciel va analyser <strong class="fragment">les besoins d'intéropérabilité
+							avec l'existant</strong> afin d'éviter <strong class="fragment">le passage brutal à la
+							nouvelle solution</strong></p>
+						<p>Il va trancher <strong class="fragment">les patterns architecturaux (3 tiers/4
+							tiers)</strong> mais également <strong class="fragment">proposer des solutions
+							d'intégration continue</strong></p>
+					</section>
+					<section>
+						<h1>Le développeur</h1>
+						<img src="img/commitStrip/codeur.jpg" alt="Le développeur" height="500"/>
+					</section>
+					<section>
+						<h2>Contexte</h2>
+						<p>Le développeur créé des algorithmes régissant le comportement d'un logiciel, à partir d'un
+							cahier des charges.</p>
+					</section>
+					<section>
+						<h2>Missions</h2>
+						<ul>
+							<li class="fragment">Prototypage</li>
+							<li class="fragment">Conception</li>
+							<li class="fragment">Tests</li>
+							<li class="fragment">Maintenance</li>
+							<li>...</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Scénario</h2>
+						<p>On demande à une équipe de développeurs de concevoir un progiciel de gestion intégré. </p>
+					</section>
+					<section>
+						<h3>Au delà de la conception</h3>
+						<p>L'équipe va éliminer <strong class="fragment">toutes les inquiétudes techniques</strong>
+							avant de s'atteler <strong class="fragment">à la conception</strong> du logiciel.
+							Elle va ensuite proposer <strong class="fragment">des moyens de test de
+							l'application</strong>. Enfin, elle fera <strong class="fragment">la maintenance
+							applicative</strong> de la plateforme.</p>
+					</section>
+					<section>
+						<h1>L'administrateur de bases de données (DBA)</h1>
+						<img src="img/commitStrip/dba.jpg" alt="Le DBA" height="390"/>
+					</section>
+					<section>
+						<h2>Contexte</h2>
+						<p>Le <abbr title="DataBases Administrator - Administrateur de bases de données">DBA</abbr> est
+							responsable du modèle de données d'une entreprise</p>
+					</section>
+					<section>
+						<h2>Missions</h2>
+						<ul>
+							<li class="fragment">Concevoir la structure d'une base de données</li>
+							<li class="fragment">Concevoir le modèle d'accès aux informations (Couche modèle d'une application)</li>
+							<li class="fragment">Dimensionner l'infrastructure</li>
+							<li class="fragment">Faire du fine-tuning</li>
+							<li class="fragment">Gérer l'intégrité et la sécurité des données</li>
+							<li>...</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Scénario</h2>
+						<p>Une société prépare une application de type réseau social à fort trafic, elle charge un
+						administrateur de bases de données de suivre ce projet. </p>
+					</section>
+					<section>
+						<h3>Un pont entre développement et infrastructure</h3>
+						<p>Le <abbr title="DataBases Administrator - Administrateur de bases de données">DBA</abbr> créé le
+							<strong class="fragment">modèle conceptuel de données</strong>. Il épaule les développeurs dans
+							<strong class="fragment">la création de la couche Model de leur application</strong>. Il gère les
+							<strong class="fragment">accès des différents utilisateurs</strong> de la base de données. Il mets en place des
+							<strong class="fragment">procédures d'audit</strong> et de <strong class="fragment">backup</strong>.
+						Il va prévoir la <strong class="fragment">montée en charge des serveurs</strong> de base de données, pour
+							<strong class="fragment">dimensionner l'infrastructure</strong> et faire du <strong
+									class="fragment">fine tuning</strong> des serveurs de base de données.</p>
+					</section>
+					<section>
+						<h1>L'intégrateur (ou front-end dev)</h1>
+						<img src="img/commitStrip/integrateur.jpg" alt="L'intégrateur" height="490"/>
+					</section>
+					<section>
+						<h2>Contexte</h2>
+						<p>L'intégrateur est chargé reproduire les maquettes du graphiste en interface logiciel</p>
+					</section>
+					<section>
+						<h2>Missions</h2>
+						<ul>
+							<li class="fragment">Conseil et valide les maquettes</li>
+							<li class="fragment">Gère la compatibilité de l'interface</li>
+							<li class="fragment">Produit les éléments graphiques de l'interface</li>
+							<li class="fragment">Optimise l'accessibilité de l'interface</li>
+							<li class="fragment">Optimise le référencement de l'interface (web)</li>
+							<li class="fragment">Gère l'animation de l'interface</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Scénario</h2>
+						<p>L'intégrateur travaille avec le graphiste pour concevoir le nouveau design d'une application web.</p>
+					</section>
+					<section>
+						<h3>Pas seulement un codeur</h3>
+						<p>L'intégrateur valide la <strong class="fragment">faisabilité des éléments
+							graphiques</strong> et <strong class="fragment">conseil par son expérience d'UI/UX</strong>.
+							Il va ensuite <strong class="fragment">traduire cette interface en code</strong>, en s'assurant de la
+							<strong class="fragment">compatibilité entre les différents navigateurs</strong>. En ajoutant des éléments liés à
+							<strong class="fragment">l'accessibilité</strong> et au <strong class="fragment">référencement</strong>.
+						</p>
+					</section>
+					<section>
+						<h1>Le développeur "Full-Stack"</h1>
+						<img src="img/fullstackIllustration.jpg" alt="L'intégrateur" height="490"/>
+					</section>
+					<section>
+						<h2>Contexte</h2>
+						<p>Le développeur dit full-stack suit le développement complet d'une application, des étapes de préconception au déploiement.</p>
+					</section>
+					<section>
+						<h2>Missions</h2>
+						<p>Le développeur full-stack est capable de toutes les missions des autres corps de métier du développement à l'administration.</p>
+					</section>
+					<section>
+						<h2>Scénario</h2>
+						<p>Vous devez développer une application mobile de gestion d'évenements.</p>
+					</section>
+					<section>
+						<h3>Un travail de bout en bout.</h3>
+						<p>
+							Le développeur full stack réfléchit <strong class="fragment">aux besoins du client et de
+							l'utilisateur</strong> afin de cibler <strong class="fragment">la
+							logique métier</strong>. Il <strong class="fragment">modélise les données</strong> lui-même, ainsi que
+							<strong class="fragment">l'architecture applicative</strong>. Il conçoit <strong
+									class="fragment">l'expérience et l'interface utilisateur</strong>. Il <strong
+									class="fragment">déploie et dimensionne</strong> son application.
+						</p>
+					</section>
+					<section>
+						<h1>Le data scientist</h1>
+						<blockquote class="twitter-tweet" lang="fr">
+							<p>
+								Data Scientist (n.): Person who is better at statistics than any software engineer and
+								better at software engineering than any statistician.
+							</p>
+							&mdash; Josh Wills (@josh_wills)
+							<a href="https://twitter.com/josh_wills/status/198093512149958656">3 Mai 2012</a>
+						</blockquote>
+					</section>
+					<section>
+						<h2>Contexte</h2>
+						<p>
+							<small>"Data Scientist" -  © William Cleveland, 2001  </small>
+						</p>
+						<p>Le data scientist travaille sur un énorme volume de données provenant de plusieurs sources
+							afin d'en faire resortir des indicateurs concrets pour la stratégie
+							et l'opérationnel d'une entreprise.</p>
+					</section>
+					<section>
+						<h2>Missions</h2>
+						<p>Comprendre les comportements et adapter sa solution logicielle</p>
+					</section>
+					<section>
+						<h2>Scénario</h2>
+						<p>Le responsable marketing fait appel à vos services pour améliorer une plateforme de e-commerce.</p>
+					</section>
+					<section>
+						<h3>Une recherche multi canaux</h3>
+						<p>Le data scientist, à la différence du data analyst, a une <strong class="fragment">capacité
+							de synthèse</strong>, via des outils numériques, <strong class="fragment">de différentes
+							sources de données</strong>. Il croise les données provenant <strong class="fragment">de la
+							plateforme et de ses différents canaux de diffusion</strong> avec <strong class="fragment">des
+							sources d'open data</strong> et
+							en fait ressortir <strong class="fragment">les produits à mettre en avant suivant les
+								données personnelles d'un utilisateur</strong>. </p>
+					</section>
+					<section>
+						<h1>Le Developpeur-Opérateur</h1>
+						<img src="img/devopsIllustration.jpg" alt="DevOps Everywhere" />
+					</section>
+					<section>
+						<h2>Contexte</h2>
+						<p>Le devops utilise ses compétences en développement pour mettre en place des automatismes
+							de déploiement de machines ou de solutions logicielles.</p>
+					</section>
+					<section>
+						<h2>Missions</h2>
+						<ul>
+							<li class="fragment">Réduire la friction opérationnel <-> développement / stabilité <-> agilité</li>
+							<li class="fragment">Préparer une mise en production logicielle ou matérielle</li>
+							<li class="fragment">Gérer un parc de machines comme un lot</li>
+							<li class="fragment">Maintenir un déploiement non-incrémental</li>
+							<li class="fragment">Aimer Docker</li>
+							<li>...</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Scénario</h2>
+						<p>Le DevOps doit mettre à niveau le parc logiciel avec la dernière version d'un logiciel donné,
+							et préparer le déploiement de 200 machines avec ces mêmes logiciels</p>
+					</section>
+					<section>
+						<h3>Au centre : une gestion de la configuration</h3>
+						<p>Le DevOps va <strong class="fragment">décrire dans son outil de gestion de
+							configuration</strong> la nouvelle configuration de ses machines.
+							Il va <strong class="fragment">lancer le déploiement des nouvelles machines qui vont
+								s'installer jusqu'à atteindre le niveau de la configuration.</strong></p>
+					</section>
+				</section>
+
+				<section>
+					<h1>Le management d'équipe technique</h1>
+					<p>Par Lucas CORBEAUX</p>
+				</section>
+				<section>
+					<h2>L'auteur</h2>
+					<ul>
+						<li>Développeur autodidacte</li>
+						<li>Manager autodidacte</li>
+						<li>Entrepreneur autodidacte</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Petit refactoring</h2>
 						<pre>var autodidactize = function(skill, i, skills) {
     skills[i] = skill.concat(' autodidacte');
 };
@@ -89,101 +422,100 @@
 var skills = ['Développeur', 'Manager', 'Entrepreneur'];
 skills.forEach(autodidactize);
 						</pre>
-					</section>
-					<section>
-						<h1>Manager : qu'est-ce que c'est ?</h1>
-					</section>
-					<section>
-						<h2>Obtenir de ses collaborateurs</h2>
-					</section>
-					<section>
-						<h2>Management top-down</h2>
-					</section>
-					<section>
-						<h2>Management bottom-up</h2>
-					</section>
-					<section>
-						<h2>Prédiction vs Innovation</h2>
-					</section>
-					<section>
-						<h1>Le rôle de CTO</h1>
-					</section>
-					<section>
-						<h2>Le CTO en startup</h2>
-					</section>
-					<section>
-						<h3>Une startup qu'est-ce que c'est ?</h3>
-					</section>
-					<section>
-						<p><em>A startup is a temporary organization designed to search for a repeatable and scalable business model</em></p>
-						<small>Steve Blank</small>
-					</section>
-					<section>
-						<ul>
-							<li>Une structure temporaire</li>
-							<li>Qui fluctue énormément</li>
-							<li>Foncer dans le mur en espérant le convaincre de bouger avant l'impact</li>
-						</ul>
-					</section>
-					<section>
-						<h3>Le CTO des premiers mois<br><small>Le starter</small></h3>
-					</section>
-					<section>
-						<p>TODO : Contexte</p>
-					</section>
-					<section>
-						<p>TODO : Missions</p>
-					</section>
-					<section>
-						<p>TODO : Scénarios</p>
-					</section>
-					<section>
-						<h3>Le CTO de la croissance<br><small>Le builder</small></h3>
-					</section>
-					<section>
-						<p>TODO : Contexte</p>
-					</section>
-					<section>
-						<p>TODO : Missions</p>
-					</section>
-					<section>
-						<p>TODO : Scénarios</p>
-					</section>
-					<section>
-						<h3>Le CTO de la startup successful<br><small>L'executive</small></h3>
-					</section>
-					<section>
-						<p>TODO : Contexte</p>
-					</section>
-					<section>
-						<p>TODO : Missions</p>
-					</section>
-					<section>
-						<p>TODO : Scénarios</p>
-					</section>
-					<section>
-						<h2>Le CTO dans une entreprise</h2>
-					</section>
-					<section>
-						<p>TODO : Contexte</p>
-					</section>
-					<section>
-						<p>TODO : Missions</p>
-					</section>
-					<section>
-						<p>TODO : Scénarios</p>
-					</section>
-					<section>
-						<h2>Merci !</h2>
-						<p>Me contacter :</p>
-						<ul>
-							<li>Twitter : @lucascorbeaux</li>
-							<li>Email : lucas.corbeaux@bemycto.com</li>
-						</ul>
-					</section>
 				</section>
 				<section>
-					<h1>Merci à tous</h1>
+					<h1>Manager : qu'est-ce que c'est ?</h1>
+				</section>
+				<section>
+					<h2>Obtenir de ses collaborateurs</h2>
+				</section>
+				<section>
+					<h2>Management top-down</h2>
+				</section>
+				<section>
+					<h2>Management bottom-up</h2>
+				</section>
+				<section>
+					<h2>Prédiction vs Innovation</h2>
+				</section>
+				<section>
+					<h1>Le rôle de CTO</h1>
+				</section>
+				<section>
+					<h2>Le CTO en startup</h2>
+				</section>
+				<section>
+					<h3>Une startup qu'est-ce que c'est ?</h3>
+				</section>
+				<section>
+					<p><em>A startup is a temporary organization designed to search for a repeatable and scalable business model</em></p>
+					<small>Steve Blank</small>
+				</section>
+				<section>
+					<ul>
+						<li>Une structure temporaire</li>
+						<li>Qui fluctue énormément</li>
+						<li>Foncer dans le mur en espérant le convaincre de bouger avant l'impact</li>
+					</ul>
+				</section>
+				<section>
+					<h3>Le CTO des premiers mois<br><small>Le starter</small></h3>
+				</section>
+				<section>
+					<p>TODO : Contexte</p>
+				</section>
+				<section>
+					<p>TODO : Missions</p>
+				</section>
+				<section>
+					<p>TODO : Scénarios</p>
+				</section>
+				<section>
+					<h3>Le CTO de la croissance<br><small>Le builder</small></h3>
+				</section>
+				<section>
+					<p>TODO : Contexte</p>
+				</section>
+				<section>
+					<p>TODO : Missions</p>
+				</section>
+				<section>
+					<p>TODO : Scénarios</p>
+				</section>
+				<section>
+					<h3>Le CTO de la startup successful<br><small>L'executive</small></h3>
+				</section>
+				<section>
+					<p>TODO : Contexte</p>
+				</section>
+				<section>
+					<p>TODO : Missions</p>
+				</section>
+				<section>
+					<p>TODO : Scénarios</p>
+				</section>
+				<section>
+					<h2>Le CTO dans une entreprise</h2>
+				</section>
+				<section>
+					<p>TODO : Contexte</p>
+				</section>
+				<section>
+					<p>TODO : Missions</p>
+				</section>
+				<section>
+					<p>TODO : Scénarios</p>
+				</section>
+				<section>
+					<h2>Merci !</h2>
+					<p>Me contacter :</p>
+					<ul>
+						<li>Twitter : @lucascorbeaux</li>
+						<li>Email : lucas.corbeaux@bemycto.com</li>
+					</ul>
+				</section>
+				<section>
+					<p>Merci à tous</p>
 				</section>
 			</div>
 
@@ -196,7 +528,9 @@ skills.forEach(autodidactize);
 
 			// Full list of configuration options available here:
 			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize();
+			Reveal.initialize({
+				history: true
+			});
 
 		</script>
 
