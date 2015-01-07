@@ -24,13 +24,29 @@
 				background: none;
 			}
 
-			#gael-icons {
+			#gael-icons, #lucas-icons {
 				position: absolute;
 				bottom: -183px;
 				right: 0;
 				width: 200px;
 				height: 183px;
 				text-align: left;
+			}
+
+			.oops {
+				text-decoration: line-through;
+			}
+
+			li.show-and-hide, small.show-and-hide {
+				display: none;
+			}
+
+			small.show-and-hide.current-fragment {
+				display: block;
+			}
+
+			li.show-and-hide.current-fragment {
+				display: list-item;
 			}
 		</style>
 
@@ -398,6 +414,232 @@
 							configuration</strong> la nouvelle configuration de ses machines.
 							Il va <strong class="fragment">lancer le déploiement des nouvelles machines qui vont
 								s'installer jusqu'à atteindre le niveau de la configuration.</strong></p>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h1>Le management d'équipe technique</h1>
+						<p>Par Lucas CORBEAUX</p>
+					</section>
+					<section>
+						<h2>L'auteur</h2>
+						<ul>
+							<li>Développeur autodidacte</li>
+							<li>Manager autodidacte</li>
+							<li>Entrepreneur autodidacte</li>
+						</ul>
+						<div id="lucas-icons">
+							<a title="Vers github" href="https://github.com/lucascorbeaux/">
+								<img src="img/icons/github.png" alt="github"
+									 class="no-border"/>
+								<small>lucascorbeaux</small>
+							</a><br />
+							<a title="Vers LinkedIn" href="https://www.linkedin.com/pub/lucas-corbeaux/76/390/379">
+								<img src="img/icons/linkedin.png" alt="LinkedIn"
+									 class="no-border"/>
+								<small>Lucas CORBEAUX</small>
+							</a><br />
+							<a title="Vers Twitter" href="https://twitter.com/lucascorbeaux">
+								<img src="img/icons/twitter.png" alt="Twitter"
+									 class="no-border"/>
+								<small>@lucascorbeaux</small>
+							</a><br/>
+							<a title="BeMyCTO" href="http://bemycto.com/">
+								<img src="img/icons/bemycto.png" alt="Twitter"
+									 class="no-border"/>
+								<small>BeMyCTO</small>
+							</a>
+						</div>
+					</section>
+					<section>
+						<h2>Petit refactoring</h2>
+							<pre>var autodidactize = function(skill, i, skills) {
+    skills[i] = skill.concat(' autodidacte');
+};
+
+var skills = ['Développeur', 'Manager', 'Entrepreneur'];
+skills.forEach(autodidactize);
+							</pre>
+					</section>
+					<section>
+						<h1>Manager : qu'est-ce que c'est ?</h1>
+					</section>
+					<section>
+						<h2>Obtenir de ses collaborateurs</h2>
+						<ul>
+							<li class="fragment">Des résultats</li>
+							<li class="fragment">De l'engagement</li>
+							<li class="fragment show-and-hide">Un numéro de carte bleue</li>
+							<li class="fragment oops">Un numéro de carte bleue</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Management top-down</h2>
+						<img src="img/topdownIllustration.png">
+						<ul>
+							<li class="fragment">Le management décide des objectifs et des moyens</li>
+							<li class="fragment">L'équipe produit, et c'est tout</li>
+							<li class="fragment">Forte prévisibilité, faible innovation, pas d'engagement des équipes</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Management bottom-up</h2>
+						<img src="img/bottomupIllustration.png">
+						<ul>
+							<li class="fragment">Le management décide des objectifs</li>
+							<li class="fragment">L'équipe réfléchit aux meilleurs moyens possibles</li>
+							<li class="fragment">Le management alimente la réflexion et tranche la décision</li>
+							<li class="fragment">L'équipe produit</li>
+							<li class="fragment">Équipes innovantes, productives, engagées mais moins de visibilité</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Devenir manager</h2>
+						<ul>
+							<li class="fragment">Savoir être un facilitateur</li>
+							<li class="fragment">Comprendre ce que les autres font</li>
+							<li class="fragment">Savoir que si ils font différemment ce n'est pas forcément moins bien</li>
+							<li class="fragment">Apprendre à lâcher prise</li>
+							<li class="fragment">Oublier le plan de carrière :  <span class="fragment highlight-red">tirer partie des opportunités</span></li>
+						</ul>
+					</section>
+					<section>
+						<h1>Le rôle de CTO</h1>
+					</section>
+					<section>
+						<p>Un CTO c'est...</p>
+						<ul>
+							<li class="fragment">Un expert technique</li>
+							<li class="fragment">En charge des évolutions technologiques...</li>
+							<li class="fragment">Du bon déroulement des projets...</li>
+							<li class="fragment">Et qui aligne la technique avec le stratégie</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Le CTO en startup</h2>
+					</section>
+					<section>
+						<h3>Une startup qu'est-ce que c'est ?</h3>
+					</section>
+					<section>
+						<blockquote cite="Steve Blank" lang="fr">
+							<p>
+								A startup is a temporary organization designed to search for a repeatable and scalable business model
+							</p>
+						</blockquote>
+						<p><small>Steve Blank</small></p>
+					</section>
+					<section>
+						<p>En gros et en résumé :</p>
+						<ul>
+							<li class="fragment">Une structure temporaire</li>
+							<li class="fragment">Qui fluctue énormément</li>
+							<li class="fragment">Foncer dans le mur en espérant le convaincre de bouger  <span class="fragment highlight-red">avant l'impact</span></li>
+						</ul>
+					</section>
+					<section>
+						<h3>Le CTO des premiers mois<br><small>Le starter</small></h3>
+					</section>
+					<section>
+						<p>Vous avez une idée géniale, pas de bol vous êtes le seul à le savoir.</p>
+						<p class="fragment">Il va falloir la concrétiser <span class="fragment highlight-red">très vite</span>.</p>
+					</section>
+					<section>
+						<p>Il va falloir :</p>
+						<ul>
+							<li class="fragment">Choisir des technos sans trop savoir ce que l'on va produire au final</li>
+							<li class="fragment">Prototyper <span class="fragment highlight-red">très vite</span></li>
+							<li class="fragment">Itérer <span class="fragment highlight-red">encore plus vite</span> sur le prototype de base</li>
+						</ul>
+					</section>
+					<section>
+						<p>Votre associé à une idée géniale : un SaaS de stockage de fichiers.</p>
+						<p class="fragment">Vous êtes super fier de votre système d'upload : vous y avez passé la semaine.</p>
+						<p class="fragment">Et 3h passées sur un graph d'occupation d'espace disque pour le fun.</p>
+						<p class="fragment">Deux semaines plus tard les retours clients sont unanimes : personne ne veut de votre solution de stockage.</p>
+						<p class="fragment">Par contre on souhaite vous acheter votre produit pour mesurer l'occupation d'espace disque.</p>
+						<p class="fragment">Et les clients veulent voir un prototype <span class="fragment highlight-red">demain</span>.</p>
+					</section>
+					<section>
+						<h3>Le CTO de la croissance<br><small>Le builder</small></h3>
+					</section>
+					<section>
+						<p>Vous avez survécu aux deadlines des premiers mois, validé vos premières idées et levé des fonds.</p>
+						<p class="fragment">Maintenant il faut que le produit évolue <span class="fragment highlight-red">vite</span>, tout en accueillant <span class="fragment highlight-red">plus de monde</span>.</p>
+					</section>
+					<section>
+						<p>C'est l'heure de rendre tout ça scalable :</p>
+						<ul>
+							<li class="fragment">Recruter une équipe</li>
+							<li class="fragment">Poser les bases du workflow</li>
+							<li class="fragment">Adapter les technologies aux besoins de performances</li>
+						</ul>
+					</section>
+					<section>
+						<p>Vous voyez ce jour en entretien un lead dev.</p>
+						<p class="fragment">Ça tombe bien, la qualité commençait à chuter.</p>
+						<p class="fragment">Et vous êtes trop occupé à trouver une solution pour que le serveur encaisse 3 fois plus de requêtes par seconde d'ici deux semaines...</p>
+					</section>
+					<section>
+						<h3>Le CTO de la startup successful<br><small>L'executive</small></h3>
+					</section>
+					<section>
+						<p>Votre startup compte désormais 200 salariés et votre solution de monitoring est utilisée par plus de 10000 clients.</p>
+						<p class="fragment">C'est bien, mais le marché se réduit de jour en jour, il va falloir augmenter les marges...</p>
+						<p class="fragment">... et donc, <span class="fragment highlight-red">réduire les coûts</span>.</p>
+					</section>
+					<section>
+						<p>C'est l'heure de l'optimisation :</p>
+						<ul>
+							<li class="fragment">Réduire les coûts là où c'est possible...</li>
+							<li class="fragment">...en externalisant ce qui coûte trop cher en interne...</li>
+							<li class="fragment">...mais surtout en internalisant ce que l'entreprise sait faire.</li>
+						</ul>
+					</section>
+					<section>
+						<p>Vos objectifs cette année sont d'économiser 200000$ sur les coûts de fonctionnement sans compromettre la qualité de service.</p>
+						<p class="fragment">Notre compétence en gestion d'espace disque nous permettrait d'économiser 80000$ par an en l'internalisant.</p>
+						<p class="fragment">D'ailleurs nos lead dev sont devenus très bons...</p>
+						<p class="fragment">...tellement bons que leur équipes n'ont plus autant besoin d'eux pour avancer.</p>
+						<p class="fragment">Vendre leur compétence d'expert nous rapporterait 120000$ par an supplémentaire, sans impacter nos projets.</p>
+					</section>
+					<section>
+						<h2>Le CTO dans une entreprise</h2>
+					</section>
+					<section>
+						<p>Votre entreprise a déjà son historique, ses process, sa culture propre.</p>
+						<p class="fragment">Et généralement sa priorité est de continuer à faire évoluer ses produits rapidement.</p>
+						<p class="fragment">Tout en  <span class="fragment highlight-red">limitant les coûts</span>...</p>
+					</section>
+					<section>
+						<p>Entre innovation et conservatisme</p>
+						<ul>
+							<li class="fragment">Aller vers l'innovation...</li>
+							<li class="fragment">...mais  <span class="fragment highlight-red">pas trop vite</span></li>
+						</ul>
+					</section>
+					<section>
+						<p>Vos plannings projets sont très chargés...</p>
+						<p class="fragment">Mais vous avez identifié que votre antique CVS était un frein majeur.</p>
+						<p class="fragment">La revue par les pairs prends aussi trop de temps, il faut l'optimiser.</p>
+						<p class="fragment">Vous allez y aller progressivement. Les chantiers commenceront dans 2 mois et finiront <span class="fragment highlight-red">l'année prochaine</span>.</p>
+					</section>
+					<section>
+						<h1>Devenir CTO</h1>
+					</section>
+					<section>
+						<h2>Créer sa boîte</h2>
+						<img src="img/commitStrip/cto.jpg">
+					</section>
+					<section>
+						<h2>Rejoindre une entreprise en croissance</h2>
+						<p class="fragment">...ou un nouveau service</p>
+					</section>
+					<section>
+						<h2>Devenir CTO à la place du CTO</h2>
+						<img src="img/iznogoudIllustration.jpg">
+						<small class="fragment show-and-hide">Plus simple si le CTO a une voiture et que vous connaissez un mécanicien discret</small>
+						<small class="fragment oops">Plus simple si le CTO a une voiture et que vous connaissez un mécanicien discret</small>
 					</section>
 				</section>
 				<section>
